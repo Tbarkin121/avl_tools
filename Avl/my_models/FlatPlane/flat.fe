@@ -1,0 +1,45 @@
+ ---------------------------------------------------------------
+ Vortex Strengths (by surface, by strip)
+
+  Forces referred to Sref, Cref, Bref about Xref, Yref, Zref
+  Standard axis orientation,  X fwd, Z down         
+
+ ******************************************************************************
+  Surface # 1     wing                                    
+     # Chordwise  =  2   # Spanwise =  2   First strip  =   1
+    Surface area =    1.000000       Ave. chord =    1.000000
+     CLsurf  =   0.18132     Clsurf  =   0.09062
+     CYsurf  =   0.00000     Cmsurf  =   0.05343
+     CDsurf  =   0.00700     Cnsurf  =   0.00442
+     CDisurf =   0.00700     CDvsurf =   0.00000
+
+  Forces referred to Ssurf, Cave about hinge axis thru LE
+     CLsurf  =   0.18132     CDsurf  =   0.00700
+ ******************************************************************************
+
+ Strip #  1     # Chordwise =  2   First Vortex =   1
+    Xle =   0.00000    Ave. Chord   =    1.0000   Incidence  =    0.0000 deg
+    Yle =  -0.25000    Strip Width  =   0.50000   Strip Area =    0.500000
+    Zle =   0.00000    Strip Dihed. =    0.0000
+
+    cl  =   0.18132       cd  =   0.00700      cdv =   0.00000
+    cn  =   0.18124       ca  =  -0.00883      cnc =   0.18124    wake dnwsh =   0.07721
+    cmLE=  -0.03719    cm c/4 =   0.00812
+
+    I        X           Y           Z           DX        Slope        dCp
+    1     0.12500    -0.25000     0.00000     0.50000     0.00000     0.30435
+    2     0.62500    -0.25000     0.00000     0.50000     0.00000     0.05813
+
+ Strip #  2     # Chordwise =  2   First Vortex =   3
+    Xle =   0.00000    Ave. Chord   =    1.0000   Incidence  =    0.0000 deg
+    Yle =   0.25000    Strip Width  =   0.50000   Strip Area =    0.500000
+    Zle =   0.00000    Strip Dihed. =    0.0000
+
+    cl  =   0.18132       cd  =   0.00700      cdv =   0.00000
+    cn  =   0.18124       ca  =  -0.00883      cnc =   0.18124    wake dnwsh =   0.07721
+    cmLE=  -0.03719    cm c/4 =   0.00812
+
+    I        X           Y           Z           DX        Slope        dCp
+    3     0.12500     0.25000     0.00000     0.50000     0.00000     0.30435
+    4     0.62500     0.25000     0.00000     0.50000     0.00000     0.05813
+ ---------------------------------------------------------------

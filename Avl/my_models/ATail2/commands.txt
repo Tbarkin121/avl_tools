@@ -1,0 +1,5 @@
+load C:\Users\Plutonium\MyProjects\Avl\my_models\ATail2\atail.avl
+case C:\Users\Plutonium\MyProjects\Avl\my_models\ATail2\atail.run
+mass C:\Users\Plutonium\MyProjects\Avl\my_models\ATail2\atail.mass
+
+s C:\Users\Plutonium\MyProjects\Avl\my_models\ATail2\atail_100g.run

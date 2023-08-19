@@ -1,0 +1,97 @@
+flat_plate
+0.0                     !   Mach
+0   0   0.0             !   iYsym  iZsym  Zsym
+20.0  1.5  20.0           !   Sref   Cref   Bref   reference area, chord, span
+0.0  0.0   0.0          !   Xref   Yref   Zref   moment reference location (arb.)
+
+#
+#==============================================================
+#
+SURFACE
+Horr
+# Horshoe Vortex Distribution
+10  0.0  20 0.0   ! Nchord   Cspace   Nspan  Sspace
+
+# reflect image wing about y=0 plane
+YDUPLICATE
+    0.00000 
+
+# twist angle bias for whole surface
+ANGLE
+    0.0
+
+# x,y,z bias for whole surface
+TRANSLATE
+    0.0 0 0
+
+#----------------Body Inner Section-------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    0.0        0.0        0.0         2.0        0.000
+NACA
+    4412
+#----------------Body Outer Section-------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    1.0        10.0        0.0         1.0        0.000
+
+#
+#==============================================================
+#
+SURFACE
+Vert Top
+# Horshoe Vortex Distribution
+10  0.0  20 0.0   ! Nchord   Cspace   Nspan  Sspace
+
+# reflect image wing about y=0 plane
+YDUPLICATE
+    0.00000 
+
+# twist angle bias for whole surface
+ANGLE
+    0.0
+
+# x,y,z bias for whole surface
+TRANSLATE
+    0.0 0 0
+
+#----------------Middle-------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    0.0        0.0        0.0         2.0        0.000
+
+#----------------Upper-------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    1.0        0.0        10.0         1.0        0.000
+
+
+#
+#==============================================================
+#
+SURFACE
+Vert Bottom
+# Horshoe Vortex Distribution
+10  0.0  20 0.0   ! Nchord   Cspace   Nspan  Sspace
+
+# reflect image wing about y=0 plane
+YDUPLICATE
+    0.00000 
+
+# twist angle bias for whole surface
+ANGLE
+    0.0
+
+# x,y,z bias for whole surface
+TRANSLATE
+    0.0 0 0
+
+
+#----------------Lower-------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    1.0        0.0        -10.0         1.0        0.000
+#----------------Middle-------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    0.0        0.0        0.0         2.0        0.000

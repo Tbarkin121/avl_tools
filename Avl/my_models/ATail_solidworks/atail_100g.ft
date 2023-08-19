@@ -1,0 +1,32 @@
+ ---------------------------------------------------------------
+ Vortex Lattice Output -- Total Forces
+
+ Configuration: atail_100g                                                  
+     # Surfaces =   4
+     # Strips   = 104
+     # Vortices =1840
+
+  Sref = 0.70000E-01   Cref = 0.80000E-01   Bref = 0.85000    
+  Xref = 0.60956E-01   Yref =  0.0000       Zref = 0.36177E-02
+
+ Standard axis orientation,  X fwd, Z down         
+
+ Run case: level flight, Xcg=3.0                   
+
+  Alpha =   3.29080     pb/2V =  -0.00000     p'b/2V =  -0.00000
+  Beta  =   0.00000     qc/2V =   0.00000
+  Mach  =     0.000     rb/2V =  -0.00000     r'b/2V =  -0.00000
+
+  CXtot =   0.00237     Cltot =  -0.00000     Cl'tot =  -0.00000
+  CYtot =  -0.00000     Cmtot =  -0.23176
+  CZtot =  -0.60085     Cntot =   0.00000     Cn'tot =   0.00000
+
+  CLtot =   0.60000
+  CDtot =   0.03213
+  CDvis =   0.02000     CDind = 0.0121283
+  CLff  =   0.60002     CDff  = 0.0135259    | Trefftz
+  CYff  =  -0.00000         e =    0.8209    | Plane  
+
+   ruddervator     =   0.00000
+
+ ---------------------------------------------------------------

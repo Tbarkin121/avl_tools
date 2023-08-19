@@ -1,0 +1,6 @@
+load C:\Users\Plutonium\MyProjects\Avl\my_models\FlatPlane\flat.avl
+case C:\Users\Plutonium\MyProjects\Avl\my_models\FlatPlane\flat.run
+mass C:\Users\Plutonium\MyProjects\Avl\my_models\FlatPlane\flat.mass
+
+
+C:\Users\Plutonium\MyProjects\Avl\my_models\FlatPlane\flat.fe

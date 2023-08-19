@@ -1,0 +1,93 @@
+TWing
+#Mach
+ 0.0
+
+#IYsym   IZsym   Zsym
+ 0       0       0.0
+
+#Sref    Cref    Bref
+1.0   1.5       1.0
+
+#Xref    Yref    Zref
+60.0     0.0     0.0
+
+
+#--------------------------------------------------
+SURFACE
+Fuselage H
+#Nchordwise  Cspace   Nspanwise  Sspace
+8           1.0        8         0.
+
+
+COMPONENT
+1
+
+YDUPLICATE 
+0.0
+
+SCALE
+1.0   1.0  1.0
+
+TRANSLATE
+0.0   0.0   0.0
+
+SECTION
+#Xle   Yle    Zle      Chord   Ainc  Nspanwise  Sspace
+ 0.0   0.0    0.0      0.2   0.    
+
+SECTION
+#Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
+ 0.1   1.0    0.0     0.1   0.    
+
+
+
+
+#--------------------------------------------------
+SURFACE
+Fuselage V Bottom
+#Nchordwise  Cspace   Nspanwise  Sspace
+8           1.0        8          0.
+
+NOWAKE
+
+COMPONENT
+1
+
+SCALE
+1.0   1.0  1.0
+
+TRANSLATE
+2.0   0.0   0.0
+
+SECTION		     
+#Xle   Yle    Zle      Chord   Ainc  Nspanwise  Sspace
+ 0.1  0.0   -1.0       0.1   0.    
+
+SECTION
+#Xle   Yle    Zle      Chord   Ainc  Nspanwise  Sspace
+ 0.0   0.0    0.0      0.2   0.    
+
+
+#--------------------------------------------------
+SURFACE
+Fuselage V Top
+#Nchordwise  Cspace   Nspanwise  Sspace
+8           1.0            8          0.
+
+COMPONENT
+1
+
+SCALE
+1.0   1.0  1.0
+
+TRANSLATE
+2.0   0.0   0.0
+
+SECTION
+#Xle   Yle    Zle      Chord   Ainc  Nspanwise  Sspace
+ 0.0   0.0    0.0      0.2   0.    
+
+SECTION		     
+#Xle   Yle    Zle      Chord   Ainc  Nspanwise  Sspace
+ 0.1  0.0    1.0       0.1   0.    
+

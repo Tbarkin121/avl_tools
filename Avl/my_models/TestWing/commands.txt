@@ -1,0 +1,6 @@
+load C:\Users\Plutonium\MyProjects\Avl\my_models\TestWing\tw.avl
+case C:\Users\Plutonium\MyProjects\Avl\my_models\TestWing\tw.run
+mass C:\Users\Plutonium\MyProjects\Avl\my_models\TestWing\tw.mass
+
+
+C:\Users\Plutonium\MyProjects\Avl\my_models\TestWing\tw.fe

@@ -1,0 +1,116 @@
+atail_100g
+0.0                     !   Mach
+0   0   0.0             !   iYsym  iZsym  Zsym
+0.070 0.080  0.85       !   Sref   Cref   Bref   reference area, chord, span
+0.0  0.0   0.0          !   Xref   Yref   Zref   moment reference location (arb.)
+
+#
+#==============================================================
+#
+SURFACE
+wing
+# Horshoe Vortex Distribution
+10  -2.0  20  -2.0   ! Nchord   Cspace   Nspan  Sspace
+
+# reflect image wing about y=0 plane
+YDUPLICATE
+    0.00000 
+
+# twist angle bias for whole surface
+ANGLE
+    0.0
+
+# x,y,z bias for whole surface
+TRANSLATE
+    0.0 0 0
+
+CDCL
+    -0.276 0.033 0.551 0.016 1.379 0.0260
+
+#----------------Body Inner Section-------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    0.0        0.0        0.0         0.150        0.000
+
+NACA
+4412
+#----------------Body Outer Section-------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    0.0        0.055        0.0         0.150        0.000
+
+NACA
+4412
+#----------------Shoulder Outer Section-------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    0.040        0.135       0.0         0.110        0.000
+
+NACA
+4412
+#Cname   Cgain  Xhinge        HingeVec       SgnDup
+#CONTROL
+#aileron   -1.0    0.4    0.3436 0.937 0.0627    -1.0 
+#----------------Tip Outer Section-------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    0.200        0.435       0.025         0.060        0.000
+
+NACA
+4412
+#Cname   Cgain  Xhinge      HingeVec          SgnDup
+#CONTROL
+#aileron   -1.0    0.4    0.3436 0.937 0.0627    -1.0 
+#
+#==============================================================
+#
+SURFACE
+tail
+# Horshoe Vortex Distribution
+10  1.0  15  1.0   ! Nchord   Cspace   Nspan  Sspace
+
+# reflect image wing about y=0 plane
+YDUPLICATE
+     0.00000 
+
+# twist angle bias for whole surface
+ANGLE
+     -5.0
+
+# x,y,z bias for whole surface
+TRANSLATE
+    0.405  0   0.060
+
+CDCL
+    -0.968 0.048 0.000 0.017 0.968 0.048
+#----------------Inner Section-------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    0.0        0.0        0.0         0.050        0.000
+
+NACA
+0012
+
+#Cname   Cgain  Xhinge  HingeVec       SgnDup
+CONTROL
+ruddervator   1.0    0.5    0.0 0.7071 -0.7071    1.0 
+
+#----------------Section 2 -------------------------
+#    Xle         Yle         Zle         chord       angle  
+SECTION
+    0.0        0.060        -0.060         0.050        0.000
+
+NACA
+0012
+
+#Cname   Cgain     Xhinge       HingeVec        SgnDup
+CONTROL
+ruddervator   1.0    0.5    0.0 0.7071 -0.7071    1.0 
+
+##----------------Section 3 -------------------------
+##    Xle         Yle         Zle         chord       angle  
+#SECTION
+#    0.0        0.120        -0.120         0.050        0.000
+#
+#NACA
+#0012
